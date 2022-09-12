@@ -53,7 +53,7 @@
             bindings = <&kp K_PP>;
         };
 
-        new_combo {
+        combo_EXCLAMATION {
             bindings = <&kp EXCLAMATION>;
             key-positions = <1 2>;
         };
@@ -93,32 +93,32 @@
             key-positions = <18 8>;
         };
 
-        COMBO_LEFT_PARENTHESIS {
+        combo_LEFT_PARENTHESIS {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <6 7>;
         };
 
-        COMBO_RIGHT_PARENTHESIS {
+        combo_RIGHT_PARENTHESIS {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <7 8>;
         };
 
-        COMBO_VOLUME_UP {
+        combo_VOLUME_UP {
             bindings = <&kp C_VOLUME_UP>;
             key-positions = <25 26>;
         };
 
-        COMBO_VOLUME_DOWN {
+        combo_VOLUME_DOWN {
             bindings = <&kp C_VOLUME_DOWN>;
             key-positions = <23 24>;
         };
 
-        COMBO_PLAY_PAUSE {
+        combo_PLAY_PAUSE {
             bindings = <&kp C_PP>;
             key-positions = <24 25>;
         };
 
-        COMBO_MUTE {
+        combo_MUTE {
             bindings = <&kp C_MUTE>;
             key-positions = <23 24 25>;
         };
