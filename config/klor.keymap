@@ -216,6 +216,16 @@
             bindings = <&kp LA(BACKSPACE)>;
             key-positions = <37 43>;
         };
+
+        combo_leftscreen {
+            bindings = <&kp LC(LEFT)>;
+            key-positions = <10 22>;
+        };
+
+        combo_rightscreen {
+            bindings = <&kp LC(RIGHT)>;
+            key-positions = <21 35>;
+        };
     };
 
     keymap {
