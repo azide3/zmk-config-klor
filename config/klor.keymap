@@ -212,8 +212,8 @@
         };
 
         combo_bs_word {
-            timeout-ms = <35>;
-            bindings = <&kp LA(BSPC)>;
+            timeout-ms = <500>;
+            bindings = <&kp LA(BACKSPACE)>;
             key-positions = <37 43>;
         };
     };
