@@ -239,14 +239,12 @@
     };
 
 behaviors {
-    td01: tap_dance_01 {
-        compatible = "zmk,behavior-tap-dance";
-        label = "TAP_DANCE_MY;
-        #binding-cells = <0>;
-        tapping-term-ms = <200>;
-        bindings =
-        <&kp N1>,
-        <&kp Q>;
+        td01: tap_dance_01 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_01";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp N1>, <&kp Q>;
     };
 };
 
