@@ -236,9 +236,34 @@
             bindings = <&kp C_PREV>;
             key-positions = <23 24 25>;
         };
+
+        combo_cmdleft {
+            bindings = <&kp LG(LEFT)>;
+            key-positions = <0 1 2>;
+        };
+
+        combo_cmdright {
+            bindings = <&kp LG(RIGHT)>;
+            key-positions = <1 2 3>;
+        };
+
+        combo_optleft {
+            bindings = <&kp LA(LEFT)>;
+            key-positions = <11 12 13>;
+        };
+
+        combo_optright {
+            bindings = <&kp LA(RIGHT)>;
+            key-positions = <12 13 14>;
+        };
+
+        combo_changelang {
+            bindings = <&kp LC(SPACE)>;
+            key-positions = <15 16>;
+        };
     };
 
-behaviors {            
+    behaviors {
         gqt: global-quick-tap {
             compatible = "zmk,behavior-hold-tap";
             label = "GLOBAL_QUICK_TAP";
@@ -247,9 +272,11 @@ behaviors {
             tapping-term-ms = <200>;
             quick-tap-ms = <125>;
             global-quick-tap;
-            bindings = <&kp>, <&kp>;
+            bindings =
+                <&kp>,
+                <&kp>;
+        };
     };
-};
 
     keymap {
         compatible = "zmk,keymap";
@@ -274,10 +301,10 @@ behaviors {
                                  └─────────┴─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┴─────────┘ */
 
             bindings = <
-             &gqt N1 Q    &kp W     &kp E       &kp R      &kp T                     &kp Y      &kp U          &kp I    &kp O          &kp P
-   &kp TAB   &kp A   &kp S     &kp D       &kp F      &kp G                     &kp H      &kp J          &kp K    &kp L  &kp SEMICOLON    &kp PAGE_UP
- &kp LCTRL   &kp Z   &kp X     &kp C       &kp V      &kp B    &trans  &trans   &kp N      &kp M      &kp COMMA  &kp DOT       &kp FSLH  &kp PAGE_DOWN
-                            &kp LGUI  &kp LSHIFT  &kp ENTER  &kp LALT   &to 1   &mo 1  &kp SPACE  &kp BACKSPACE
+             &gqt N1 Q  &gqt N2 W     &gqt N3 E     &gqt N4 R  &gqt NUMBER_5 T                    &gqt N6 Y  &gqt N7 U      &gqt N8 I  &gqt N9 O      &gqt N0 P
+   &kp TAB  &gqt TAB A      &kp S         &kp D         &kp F            &kp G                        &kp H      &kp J          &kp K      &kp L  &kp SEMICOLON    &kp PAGE_UP
+ &kp LCTRL       &kp Z      &kp X  &gqt LG(C) C  &gqt LG(C) V            &kp B    &trans  &trans      &kp N      &kp M      &kp COMMA    &kp DOT       &kp FSLH  &kp PAGE_DOWN
+                                       &kp LGUI    &kp LSHIFT        &kp ENTER  &kp LALT   &to 1      &mo 1  &kp SPACE  &kp BACKSPACE
             >;
         };
 
