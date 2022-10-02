@@ -244,7 +244,7 @@
 
         combo_cmdright {
             bindings = <&kp LG(RIGHT)>;
-            key-positions = <1 2 3>;
+            key-positions = <9 8 7>;
         };
 
         combo_optleft {
@@ -254,7 +254,7 @@
 
         combo_optright {
             bindings = <&kp LA(RIGHT)>;
-            key-positions = <12 13 14>;
+            key-positions = <20 19 18>;
         };
 
         combo_changelang {
