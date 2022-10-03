@@ -282,6 +282,16 @@
             bindings = <&kp DOWN>;
             key-positions = <12 13 14>;
         };
+
+        combo_left {
+            bindings = <&kp LEFT>;
+            key-positions = <11 12 13 14>;
+        };
+
+        combo_right {
+            bindings = <&kp RIGHT>;
+            key-positions = <20 19 18 17>;
+        };
     };
 
     behaviors {
