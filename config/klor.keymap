@@ -284,11 +284,13 @@
         };
 
         combo_left {
+            timeout-ms = <30>;
             bindings = <&kp LEFT>;
             key-positions = <11 12 13 14>;
         };
 
         combo_right {
+            timeout-ms = <30>;
             bindings = <&kp RIGHT>;
             key-positions = <20 19 18 17>;
         };
