@@ -261,6 +261,16 @@
             bindings = <&kp LC(SPACE)>;
             key-positions = <15 16>;
         };
+
+        combo_up {
+            bindings = <&kp UP>;
+            key-positions = <1 2 3>;
+        };
+
+        combo_down {
+            bindings = <&kp DOWN>;
+            key-positions = <12 13 14>;
+        };
     };
 
     behaviors {
