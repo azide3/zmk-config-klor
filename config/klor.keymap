@@ -286,13 +286,13 @@
         combo_left {
             timeout-ms = <35>;
             bindings = <&kp LEFT>;
-            key-positions = <12 13 26>;
+            key-positions = <13 1 14>;
         };
 
         combo_right {
             timeout-ms = <35>;
             bindings = <&kp RIGHT>;
-            key-positions = <19 31 18>;
+            key-positions = <18 8 17>;
         };
     };
 
