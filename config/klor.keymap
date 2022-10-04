@@ -242,25 +242,25 @@
         };
 
         combo_cmdleft {
-            timeout-ms = <30>;
+            timeout-ms = <35>;
             bindings = <&kp LG(LEFT)>;
             key-positions = <1 2 3>;
         };
 
         combo_cmdright {
-            timeout-ms = <30>;
+            timeout-ms = <35>;
             bindings = <&kp LG(RIGHT)>;
             key-positions = <8 7 6>;
         };
 
         combo_optleft {
-            timeout-ms = <30>;
+            timeout-ms = <35>;
             bindings = <&kp LA(LEFT)>;
             key-positions = <12 13 14>;
         };
 
         combo_optright {
-            timeout-ms = <30>;
+            timeout-ms = <35>;
             bindings = <&kp LA(RIGHT)>;
             key-positions = <19 18 17>;
         };
@@ -284,13 +284,13 @@
         };
 
         combo_left {
-            timeout-ms = <30>;
+            timeout-ms = <35>;
             bindings = <&kp LEFT>;
             key-positions = <11 12 2>;
         };
 
         combo_right {
-            timeout-ms = <30>;
+            timeout-ms = <35>;
             bindings = <&kp RIGHT>;
             key-positions = <7 20 19>;
         };
