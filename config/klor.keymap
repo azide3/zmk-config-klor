@@ -272,18 +272,19 @@
         };
 
         combo_left {
-            timeout-ms = <35>;
+            timeout-ms = <30>;
             bindings = <&kp LEFT>;
             key-positions = <13 12>;
         };
 
         combo_right {
-            timeout-ms = <35>;
+            timeout-ms = <30>;
             bindings = <&kp RIGHT>;
             key-positions = <13 14>;
         };
 
         combo_spaces {
+            timeout-ms = <30>;
             bindings = <&kp LC(UP)>;
             key-positions = <0 9>;
         };
