@@ -139,7 +139,7 @@
             key-positions = <20 34>;
         };
 
-        combo_asterisk {
+        combo_multiply {
             timeout-ms = <30>;
             bindings = <&kp ASTERISK>;
             key-positions = <20 33>;
