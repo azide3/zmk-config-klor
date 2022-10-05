@@ -116,7 +116,7 @@
         };
 
         combo_TO3 {
-            timeout-ms = <50>;
+            timeout-ms = <30>;
             bindings = <&to 3>;
             key-positions = <39 40 22 35>;
         };
@@ -152,61 +152,61 @@
         };
 
         combo_no1 {
-            timeout-ms = <50>;
+            timeout-ms = <30>;
             bindings = <&kp NUMBER_1>;
             key-positions = <43 31>;
         };
 
         combo_no2 {
-            timeout-ms = <50>;
+            timeout-ms = <30>;
             bindings = <&kp NUMBER_2>;
             key-positions = <43 32>;
         };
 
         combo_no3 {
-            timeout-ms = <50>;
+            timeout-ms = <30>;
             bindings = <&kp NUMBER_3>;
             key-positions = <43 33>;
         };
 
         combo_no4 {
-            timeout-ms = <50>;
+            timeout-ms = <30>;
             bindings = <&kp NUMBER_4>;
             key-positions = <43 17>;
         };
 
         combo_no5 {
-            timeout-ms = <50>;
+            timeout-ms = <30>;
             bindings = <&kp NUMBER_5>;
             key-positions = <43 18>;
         };
 
         combo_no6 {
-            timeout-ms = <50>;
+            timeout-ms = <30>;
             bindings = <&kp NUMBER_6>;
             key-positions = <43 19>;
         };
 
         combo_no7 {
-            timeout-ms = <50>;
+            timeout-ms = <30>;
             bindings = <&kp NUMBER_7>;
             key-positions = <6 43>;
         };
 
         combo_no8 {
-            timeout-ms = <50>;
+            timeout-ms = <30>;
             bindings = <&kp NUMBER_8>;
             key-positions = <7 43>;
         };
 
         combo_no9 {
-            timeout-ms = <50>;
+            timeout-ms = <30>;
             bindings = <&kp NUMBER_9>;
             key-positions = <8 43>;
         };
 
         combo_no0 {
-            timeout-ms = <50>;
+            timeout-ms = <30>;
             bindings = <&kp NUMBER_0>;
             key-positions = <9 43>;
         };
@@ -272,19 +272,18 @@
         };
 
         combo_left {
-            timeout-ms = <30>;
+            timeout-ms = <35>;
             bindings = <&kp LEFT>;
             key-positions = <13 12>;
         };
 
         combo_right {
-            timeout-ms = <30>;
+            timeout-ms = <35>;
             bindings = <&kp RIGHT>;
             key-positions = <13 14>;
         };
 
         combo_spaces {
-            timeout-ms = <30>;
             bindings = <&kp LC(UP)>;
             key-positions = <0 9>;
         };
