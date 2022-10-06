@@ -244,13 +244,13 @@
         combo_optleft {
             timeout-ms = <35>;
             bindings = <&kp LA(LEFT)>;
-            key-positions = <1 2 0>;
+            key-positions = <11 12>;
         };
 
         combo_optright {
             timeout-ms = <35>;
             bindings = <&kp LA(RIGHT)>;
-            key-positions = <1 2 3>;
+            key-positions = <15 14>;
         };
 
         combo_changelang {
