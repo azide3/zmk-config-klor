@@ -118,7 +118,7 @@
         combo_TO3 {
             timeout-ms = <30>;
             bindings = <&to 3>;
-            key-positions = <39 40 22 35>;
+            key-positions = <39 22>;
         };
 
         combo_dash {
