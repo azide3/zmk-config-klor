@@ -154,61 +154,61 @@
         combo_no1 {
             timeout-ms = <50>;
             bindings = <&kp NUMBER_1>;
-            key-positions = <30 42>;
+            key-positions = <42 31>;
         };
 
         combo_no2 {
             timeout-ms = <50>;
             bindings = <&kp NUMBER_2>;
-            key-positions = <31 42>;
+            key-positions = <42 32>;
         };
 
         combo_no3 {
             timeout-ms = <50>;
             bindings = <&kp NUMBER_3>;
-            key-positions = <32 42>;
+            key-positions = <42 33>;
         };
 
         combo_no4 {
             timeout-ms = <50>;
             bindings = <&kp NUMBER_4>;
-            key-positions = <16 42>;
+            key-positions = <42 17>;
         };
 
         combo_no5 {
             timeout-ms = <50>;
             bindings = <&kp NUMBER_5>;
-            key-positions = <17 42>;
+            key-positions = <42 18>;
         };
 
         combo_no6 {
             timeout-ms = <50>;
             bindings = <&kp NUMBER_6>;
-            key-positions = <18 42>;
+            key-positions = <42 19>;
         };
 
         combo_no7 {
             timeout-ms = <50>;
             bindings = <&kp NUMBER_7>;
-            key-positions = <5 42>;
+            key-positions = <42 6>;
         };
 
         combo_no8 {
             timeout-ms = <50>;
             bindings = <&kp NUMBER_8>;
-            key-positions = <6 42>;
+            key-positions = <42 7>;
         };
 
         combo_no9 {
             timeout-ms = <50>;
             bindings = <&kp NUMBER_9>;
-            key-positions = <7 42>;
+            key-positions = <42 8>;
         };
 
         combo_no0 {
             timeout-ms = <50>;
             bindings = <&kp NUMBER_0>;
-            key-positions = <8 42>;
+            key-positions = <42 9>;
         };
 
         combo_leftscreen {
