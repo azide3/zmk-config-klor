@@ -334,7 +334,7 @@
             bindings = <
           &gqt N1 Q     &gqt N2 W     &gqt N3 E  &gqt LG(R) R  &gqt LG(T) T                                  &gqt LG(Y) Y          &gqt LG(U) U  &gqt LG(I) I  &gqt LG(O) O          &gqt LG(P) P
  &trans  &gqt TAB A  &gqt LG(S) S  &gqt LCTRL D   &gqt LGUI F   &gqt LALT G                              &gqt RIGHT_ALT H      &gqt RIGHT_GUI J  &gqt RCTRL K  &gqt LG(L) L  &gqt MINUS SEMICOLON  &trans
- &trans       &kp Z         &kp X  &gqt LG(C) C  &gqt LG(V) V  &gqt LG(B) B  &trans  &trans                  &gqt LG(N) A          &gqt LG(M) M     &kp COMMA       &kp DOT              &kp FSLH  &trans
+ &trans       &kp Z         &kp X  &gqt LG(C) C  &gqt LG(V) V  &gqt LG(B) B  &trans  &trans                  &gqt LG(N) N          &gqt LG(M) M     &kp COMMA       &kp DOT              &kp FSLH  &trans
                                          &trans    &kp LSHIFT     &kp ENTER   &to 1  &trans  &gqt LA(BACKSPACE) BACKSPACE  &gqt LG(SPACE) SPACE        &trans
             >;
         };
