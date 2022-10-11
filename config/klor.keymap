@@ -118,7 +118,7 @@
         combo_TO3 {
             timeout-ms = <30>;
             bindings = <&sl 3>;
-            key-positions = <39 22>;
+            key-positions = <37 38 27>;
         };
 
         combo_dash {
@@ -288,6 +288,16 @@
             bindings = <&kp LC(UP)>;
             key-positions = <0 9>;
         };
+
+        combo_mo1 {
+            bindings = <&mo 1>;
+            key-positions = <41 42>;
+        };
+
+        combo_to0 {
+            bindings = <&to 0>;
+            key-positions = <37 38>;
+        };
     };
 
     behaviors {
@@ -328,10 +338,10 @@
                                  └─────────┴─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┴─────────┘ */
 
             bindings = <
-             &gqt N1 Q  &gqt N2 W     &gqt N3 E     &gqt N4 R  &gqt NUMBER_5 T                    &gqt N6 Y  &gqt N7 U      &gqt N8 I  &gqt N9 O             &gqt N0 P
-   &kp TAB  &gqt TAB A      &kp S  &gqt LCTRL D   &gqt LGUI F      &gqt LALT G                        &kp H      &kp J          &kp K      &kp L  &gqt MINUS SEMICOLON    &kp PAGE_UP
- &kp LCTRL       &kp Z      &kp X  &gqt LG(C) C  &gqt LG(V) V            &kp B    &trans  &trans      &kp N      &kp M      &kp COMMA    &kp DOT              &kp FSLH  &kp PAGE_DOWN
-                                       &kp LGUI    &kp LSHIFT        &kp ENTER  &kp LALT   &to 1      &mo 1  &kp SPACE  &kp BACKSPACE
+             &gqt N1 Q  &gqt N2 W     &gqt N3 E     &gqt N4 R  &gqt NUMBER_5 T                         &gqt N6 Y         &gqt N7 U     &gqt N8 I  &gqt N9 O             &gqt N0 P
+   &kp TAB  &gqt TAB A      &kp S  &gqt LCTRL D   &gqt LGUI F      &gqt LALT G                  &gqt RIGHT_ALT H  &gqt RIGHT_GUI J  &gqt RCTRL K      &kp L  &gqt MINUS SEMICOLON    &kp PAGE_UP
+ &kp LCTRL       &kp Z      &kp X  &gqt LG(C) C  &gqt LG(V) V            &kp B  &trans  &trans             &kp N             &kp M     &kp COMMA    &kp DOT              &kp FSLH  &kp PAGE_DOWN
+                                         &trans    &kp LSHIFT        &kp ENTER   &to 1  &trans         &kp SPACE     &kp BACKSPACE        &trans
             >;
         };
 
@@ -358,7 +368,7 @@
                      &kp LG(LEFT)  &kp LG(UP)  &kp LG(DOWN)  &kp LG(RIGHT)     &kp N5                    &kp N6     &kp N7     &kp N8     &kp N9           &kp N0
  &kp LG(LS(LC(N4)))      &kp LEFT      &kp UP      &kp DOWN      &kp RIGHT   &kp LBKT                  &kp RBKT  &kp KP_N4  &kp KP_N5  &kp KP_N6     &kp KP_MINUS  &kp KP_PLUS
              &trans  &kp LA(LEFT)  &kp LA(UP)  &kp LA(DOWN)  &kp LA(RIGHT)   &kp LPAR  &trans  &trans  &kp RPAR  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_MULTIPLY       &trans
-                                                   &kp LGUI     &kp LSHIFT  &kp ENTER   &to 0  &trans    &trans     &trans     &trans
+                                                     &trans     &kp LSHIFT  &kp ENTER  &trans  &trans    &trans     &trans     &trans
             >;
         };
 
@@ -385,7 +395,7 @@
          &trans  &trans  &trans  &trans  &trans                    &trans    &trans     &trans     &trans  &trans
  &trans  &trans  &trans  &trans  &trans  &trans                  &kp LEFT  &kp DOWN     &kp UP  &kp RIGHT  &trans  &trans
  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp HOME   &kp END  &kp PG_UP  &kp PG_DN  &trans  &trans
-                         &trans  &trans  &trans   &to 0  &trans    &trans    &trans     &trans
+                         &trans  &trans  &trans  &trans  &trans    &trans    &trans     &trans
             >;
         };
 
@@ -412,7 +422,7 @@
              &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 5                  &trans  &trans  &trans  &trans  &trans
  &bt BT_CLR        &trans    &bt BT_NXT        &trans        &trans        &trans                  &trans  &trans  &trans  &trans  &trans  &trans
      &trans        &trans    &bt BT_PRV        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                                               &trans        &trans        &trans   &to 0  &trans  &trans  &trans  &trans
+                                               &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
