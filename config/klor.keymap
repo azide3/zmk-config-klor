@@ -154,61 +154,61 @@
         combo_no1 {
             timeout-ms = <50>;
             bindings = <&kp NUMBER_1>;
-            key-positions = <43 31>;
+            key-positions = <31 42>;
         };
 
         combo_no2 {
             timeout-ms = <50>;
             bindings = <&kp NUMBER_2>;
-            key-positions = <43 32>;
+            key-positions = <32 42>;
         };
 
         combo_no3 {
             timeout-ms = <50>;
             bindings = <&kp NUMBER_3>;
-            key-positions = <43 33>;
+            key-positions = <33 42>;
         };
 
         combo_no4 {
             timeout-ms = <50>;
             bindings = <&kp NUMBER_4>;
-            key-positions = <43 17>;
+            key-positions = <17 42>;
         };
 
         combo_no5 {
             timeout-ms = <50>;
             bindings = <&kp NUMBER_5>;
-            key-positions = <43 18>;
+            key-positions = <18 42>;
         };
 
         combo_no6 {
             timeout-ms = <50>;
             bindings = <&kp NUMBER_6>;
-            key-positions = <43 19>;
+            key-positions = <19 42>;
         };
 
         combo_no7 {
             timeout-ms = <50>;
             bindings = <&kp NUMBER_7>;
-            key-positions = <6 43>;
+            key-positions = <6 42>;
         };
 
         combo_no8 {
             timeout-ms = <50>;
             bindings = <&kp NUMBER_8>;
-            key-positions = <7 43>;
+            key-positions = <7 42>;
         };
 
         combo_no9 {
             timeout-ms = <50>;
             bindings = <&kp NUMBER_9>;
-            key-positions = <8 43>;
+            key-positions = <8 42>;
         };
 
         combo_no0 {
             timeout-ms = <50>;
             bindings = <&kp NUMBER_0>;
-            key-positions = <9 43>;
+            key-positions = <9 42>;
         };
 
         combo_bs_word {
@@ -338,10 +338,10 @@
                                  └─────────┴─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┴─────────┘ */
 
             bindings = <
-          &gqt N1 Q  &gqt N2 W     &gqt N3 E     &gqt N4 R  &gqt NUMBER_5 T                         &gqt N6 Y         &gqt N7 U     &gqt N8 I  &gqt N9 O             &gqt N0 P
- &trans  &gqt TAB A      &kp S  &gqt LCTRL D   &gqt LGUI F      &gqt LALT G                  &gqt RIGHT_ALT H  &gqt RIGHT_GUI J  &gqt RCTRL K      &kp L  &gqt MINUS SEMICOLON  &trans
- &trans       &kp Z      &kp X  &gqt LG(C) C  &gqt LG(V) V            &kp B  &trans  &trans             &kp N             &kp M     &kp COMMA    &kp DOT              &kp FSLH  &trans
-                                      &trans    &kp LSHIFT        &kp ENTER   &to 1  &trans         &kp SPACE     &kp BACKSPACE        &trans
+          &gqt N1 Q  &gqt N2 W     &gqt N3 E     &gqt N4 R  &gqt NUMBER_5 T                             &gqt N6 Y         &gqt N7 U     &gqt N8 I  &gqt N9 O             &gqt N0 P
+ &trans  &gqt TAB A      &kp S  &gqt LCTRL D   &gqt LGUI F      &gqt LALT G                      &gqt RIGHT_ALT H  &gqt RIGHT_GUI J  &gqt RCTRL K      &kp L  &gqt MINUS SEMICOLON  &trans
+ &trans       &kp Z      &kp X  &gqt LG(C) C  &gqt LG(V) V            &kp B  &trans  &trans                 &kp N             &kp M     &kp COMMA    &kp DOT              &kp FSLH  &trans
+                                      &trans    &kp LSHIFT        &kp ENTER   &to 1  &trans  &gqt LG(SPACE) SPACE     &kp BACKSPACE        &trans
             >;
         };
 
@@ -365,9 +365,9 @@
                                  └─────────┴─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┴─────────┘ */
 
             bindings = <
-             &kp LG(LS(LC(N4)))  &trans  &trans      &trans     &trans                  &trans     &kp N7     &kp N8     &kp N9  &kp N0
- &trans  &trans  &trans  &trans      &trans     &trans                  &trans  &kp KP_N4  &kp KP_N5  &kp KP_N6  &trans  &trans
-             &trans  &trans  &trans  &trans      &trans     &trans  &trans  &trans  &trans  &kp KP_N1  &kp KP_N2  &kp KP_N3  &trans  &trans
+         &kp LG(LS(LC(N4)))  &trans  &trans      &trans     &trans                  &trans     &kp N7     &kp N8     &kp N9  &kp N0
+ &trans              &trans  &trans  &trans      &trans     &trans                  &trans  &kp KP_N4  &kp KP_N5  &kp KP_N6  &trans  &trans
+ &trans              &trans  &trans  &trans      &trans     &trans  &trans  &trans  &trans  &kp KP_N1  &kp KP_N2  &kp KP_N3  &trans  &trans
                                      &trans  &kp LSHIFT  &kp ENTER  &trans  &trans  &trans     &trans     &trans
             >;
         };
