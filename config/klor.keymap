@@ -338,10 +338,10 @@
                                  └─────────┴─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┴─────────┘ */
 
             bindings = <
-             &gqt N1 Q  &gqt N2 W     &gqt N3 E     &gqt N4 R  &gqt NUMBER_5 T                         &gqt N6 Y         &gqt N7 U     &gqt N8 I  &gqt N9 O             &gqt N0 P
-   &kp TAB  &gqt TAB A      &kp S  &gqt LCTRL D   &gqt LGUI F      &gqt LALT G                  &gqt RIGHT_ALT H  &gqt RIGHT_GUI J  &gqt RCTRL K      &kp L  &gqt MINUS SEMICOLON    &kp PAGE_UP
- &kp LCTRL       &kp Z      &kp X  &gqt LG(C) C  &gqt LG(V) V            &kp B  &trans  &trans             &kp N             &kp M     &kp COMMA    &kp DOT              &kp FSLH  &kp PAGE_DOWN
-                                         &trans    &kp LSHIFT        &kp ENTER   &to 1  &trans         &kp SPACE     &kp BACKSPACE        &trans
+          &gqt N1 Q  &gqt N2 W     &gqt N3 E     &gqt N4 R  &gqt NUMBER_5 T                         &gqt N6 Y         &gqt N7 U     &gqt N8 I  &gqt N9 O             &gqt N0 P
+ &trans  &gqt TAB A      &kp S  &gqt LCTRL D   &gqt LGUI F      &gqt LALT G                  &gqt RIGHT_ALT H  &gqt RIGHT_GUI J  &gqt RCTRL K      &kp L  &gqt MINUS SEMICOLON  &trans
+ &trans       &kp Z      &kp X  &gqt LG(C) C  &gqt LG(V) V            &kp B  &trans  &trans             &kp N             &kp M     &kp COMMA    &kp DOT              &kp FSLH  &trans
+                                      &trans    &kp LSHIFT        &kp ENTER   &to 1  &trans         &kp SPACE     &kp BACKSPACE        &trans
             >;
         };
 
