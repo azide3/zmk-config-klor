@@ -285,7 +285,7 @@
 
         combo_mo1 {
             bindings = <&to 1>;
-            key-positions = <41 42>;
+            key-positions = <38 37 15>;
         };
 
         combo_to0 {
