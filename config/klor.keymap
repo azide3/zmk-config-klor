@@ -214,13 +214,13 @@
         combo_leftscreen {
             timeout-ms = <30>;
             bindings = <&kp LC(LEFT)>;
-            key-positions = <10 22>;
+            key-positions = <11 23>;
         };
 
         combo_rightscreen {
             timeout-ms = <30>;
             bindings = <&kp LC(RIGHT)>;
-            key-positions = <21 35>;
+            key-positions = <20 34>;
         };
 
         combo_nexttrack {
@@ -283,14 +283,24 @@
             key-positions = <0 9>;
         };
 
-        combo_mo1 {
-            bindings = <&to 1>;
-            key-positions = <38 37 15>;
-        };
-
         combo_to0 {
             bindings = <&to 0>;
             key-positions = <37 38>;
+        };
+
+        combo_screenshot {
+            bindings = <&kp LG(LC(LS(N4)))>;
+            key-positions = <0 23 9 34>;
+        };
+
+        combo_cmd_left {
+            bindings = <&kp LG(LEFT)>;
+            key-positions = <0 2>;
+        };
+
+        combo_cmd_right {
+            bindings = <&kp LG(RIGHT)>;
+            key-positions = <2 4>;
         };
     };
 
