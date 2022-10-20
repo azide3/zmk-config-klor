@@ -343,9 +343,9 @@
 
             bindings = <
           &gqt N1 Q     &gqt N2 W     &gqt N3 E  &gqt LG(R) R          &gqt LG(T) T                                 &kp Y                  &gqt LG(U) U  &gqt LG(I) I         &kp O                 &kp P
- &trans  &gqt TAB A  &gqt LG(S) S   &gqt LALT D   &gqt LGUI F          &gqt LCTRL G                      &gqt RIGHT_ALT H              &gqt RIGHT_GUI J  &gqt RCTRL K  &gqt LG(L) L  &gqt MINUS SEMICOLON  &trans
- &trans       &kp Z         &kp X  &gqt LG(C) C  &gqt LG(V) V          &gqt LG(B) B  &trans  &trans          &gqt LG(N) N                         &kp M     &kp COMMA       &kp DOT              &kp FSLH  &trans
-                                         &trans    &kp LSHIFT  &gqt LS(ENTER) ENTER   &to 1  &trans  &gqt LG(SPACE) SPACE  &gqt LA(BACKSPACE) BACKSPACE        &trans
+ &trans  &gqt TAB A  &gqt LG(S) S   &gqt LALT D   &gqt LGUI F          &gqt LCTRL G                      &gqt RIGHT_ALT H              &gqt RIGHT_GUI J  &gqt RCTRL K  &gqt LG(L) L  &gqt MINUS SEMICOLON  &kp PAGE_UP
+ &trans       &kp Z         &kp X  &gqt LG(C) C  &gqt LG(V) V          &gqt LG(B) B  &trans  &trans          &gqt LG(N) N                         &kp M     &kp COMMA       &kp DOT              &kp FSLH    &kp PG_DN
+                                       &kp LGUI    &kp LSHIFT  &gqt LS(ENTER) ENTER   &to 0  &trans  &gqt LG(SPACE) SPACE  &gqt LA(BACKSPACE) BACKSPACE        &trans
             >;
         };
 
