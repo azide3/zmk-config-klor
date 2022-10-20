@@ -214,13 +214,13 @@
         combo_leftscreen {
             timeout-ms = <30>;
             bindings = <&kp LC(LEFT)>;
-            key-positions = <11 23>;
+            key-positions = <11 0>;
         };
 
         combo_rightscreen {
             timeout-ms = <30>;
             bindings = <&kp LC(RIGHT)>;
-            key-positions = <20 34>;
+            key-positions = <20 9>;
         };
 
         combo_nexttrack {
@@ -295,12 +295,12 @@
 
         combo_cmd_left {
             bindings = <&kp LG(LEFT)>;
-            key-positions = <0 2>;
+            key-positions = <0 2 1>;
         };
 
         combo_cmd_right {
             bindings = <&kp LG(RIGHT)>;
-            key-positions = <2 4>;
+            key-positions = <2 3 1>;
         };
     };
 
@@ -342,9 +342,9 @@
                                  └─────────┴─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┴─────────┘ */
 
             bindings = <
-          &gqt N1 Q     &gqt N2 W     &gqt N3 E  &gqt LG(R) R          &gqt LG(T) T                          &gqt LG(Y) Y                  &gqt LG(U) U  &gqt LG(I) I  &gqt LG(O) O          &gqt LG(P) P
- &trans  &gqt TAB A  &gqt LG(S) S  &gqt LCTRL D   &gqt LGUI F           &gqt LALT G                      &gqt RIGHT_ALT H              &gqt RIGHT_GUI J  &gqt RCTRL K  &gqt LG(L) L  &gqt MINUS SEMICOLON  &trans
- &trans       &kp Z         &kp X  &gqt LG(C) C  &gqt LG(V) V          &gqt LG(B) B  &trans  &trans          &gqt LG(N) N                  &gqt LG(M) M     &kp COMMA       &kp DOT              &kp FSLH  &trans
+          &gqt N1 Q     &gqt N2 W     &gqt N3 E  &gqt LG(R) R          &gqt LG(T) T                                 &kp Y                  &gqt LG(U) U  &gqt LG(I) I         &kp O                 &kp P
+ &trans  &gqt TAB A  &gqt LG(S) S   &gqt LALT D   &gqt LGUI F          &gqt LCTRL G                      &gqt RIGHT_ALT H              &gqt RIGHT_GUI J  &gqt RCTRL K  &gqt LG(L) L  &gqt MINUS SEMICOLON  &trans
+ &trans       &kp Z         &kp X  &gqt LG(C) C  &gqt LG(V) V          &gqt LG(B) B  &trans  &trans          &gqt LG(N) N                         &kp M     &kp COMMA       &kp DOT              &kp FSLH  &trans
                                          &trans    &kp LSHIFT  &gqt LS(ENTER) ENTER   &to 1  &trans  &gqt LG(SPACE) SPACE  &gqt LA(BACKSPACE) BACKSPACE        &trans
             >;
         };
@@ -423,10 +423,10 @@
                                  └─────────┴─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┴─────────┘ */
 
             bindings = <
-             &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 5                  &trans  &trans  &trans  &trans  &trans
- &bt BT_CLR        &trans    &bt BT_NXT        &trans        &trans        &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-     &trans        &trans    &bt BT_PRV        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                                               &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans
+         &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 5                  &trans  &trans  &trans  &trans  &trans
+ &trans        &trans        &trans        &trans        &trans        &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans    &bt BT_CLR        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                           &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
