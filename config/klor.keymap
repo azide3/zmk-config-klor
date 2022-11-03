@@ -302,6 +302,11 @@
             bindings = <&kp LG(RIGHT)>;
             key-positions = <2 3 1>;
         };
+
+        combo_mouse {
+            bindings = <&to 2>;
+            key-positions = <41 42>;
+        };
     };
 
     behaviors {
@@ -378,7 +383,7 @@
 
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
-        RAISE {
+        MOUSE {
             // ┌───────────────────────────────────────────────────────────┐
 
             label = "RAISE";
@@ -396,10 +401,10 @@
                                  └─────────┴─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┴─────────┘ */
 
             bindings = <
-         &trans  &trans  &trans  &trans  &trans                    &trans    &trans     &trans     &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans                  &kp LEFT  &kp DOWN     &kp UP  &kp RIGHT  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp HOME   &kp END  &kp PG_UP  &kp PG_DN  &trans  &trans
-                         &trans  &trans  &trans  &trans  &trans    &trans    &trans     &trans
+         &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                         &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
