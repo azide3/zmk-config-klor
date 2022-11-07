@@ -220,7 +220,7 @@
         combo_rightscreen {
             timeout-ms = <30>;
             bindings = <&kp LC(RIGHT)>;
-            key-positions = <20 9>;
+            key-positions = <4 15>;
         };
 
         combo_nexttrack {
@@ -280,7 +280,7 @@
         combo_spaces {
             timeout-ms = <35>;
             bindings = <&kp LC(UP)>;
-            key-positions = <0 9>;
+            key-positions = <0 4>;
         };
 
         combo_to0 {
