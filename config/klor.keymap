@@ -23,12 +23,12 @@
 #define ADJUST 3
 
 &mmv {
-    time-to-max-speed-ms = <500>;
+    time-to-max-speed-ms = <250>;
     acceleration-exponent=<1>;
 };
 
 &mwh {
-    time-to-max-speed-ms = <500>;
+    time-to-max-speed-ms = <250>;
     acceleration-exponent=<1>;
 };
 
