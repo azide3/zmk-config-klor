@@ -22,6 +22,14 @@
 #define RAISE  2
 #define ADJUST 3
 
+&mmv {
+    time-to-max-speed-ms = <500>;
+};
+
+&mwh {
+    acceleration-exponent=<1>;
+};
+
 / {
 
     combos {
