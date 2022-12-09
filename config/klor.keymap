@@ -15,7 +15,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/mouse.h>
 
 #define BASE   0
 #define LOWER  1
@@ -24,16 +23,15 @@
 
 &mmv {
     time-to-max-speed-ms = <250>;
-    acceleration-exponent=<1>;
+    acceleration-exponent = <1>;
 };
 
 &mwh {
     time-to-max-speed-ms = <250>;
-    acceleration-exponent=<1>;
+    acceleration-exponent = <1>;
 };
 
 / {
-
     combos {
         compatible = "zmk,combos";
 
@@ -306,16 +304,9 @@
             key-positions = <2 4>;
         };
 
-        combo_backspace {
-            timeout-ms = <25>;
-            bindings = <&kp BACKSPACE>;
-            key-positions = <5 6>;
-        };
-
-        combo_altbackspace {
-            timeout-ms = <25>;
-            bindings = <&kp LA(BACKSPACE)>;
-            key-positions = <5 16>;
+        combo_to1 {
+            bindings = <&to 1>;
+            key-positions = <41 42>;
         };
     };
 
@@ -360,7 +351,7 @@
               &kp Q         &kp W  &gqt LG(E) E  &gqt LG(R) R          &gqt LG(T) T                                 &kp Y      &gqt LG(U) U             &gqt LG(I) I                   &kp O                 &kp P
  &trans  &gqt TAB A         &kp S   &gqt LALT D   &gqt LGUI F          &gqt LCTRL G                      &gqt RIGHT_ALT H  &gqt RIGHT_GUI J             &gqt LG(K) K            &gqt LG(L) L  &gqt MINUS SEMICOLON  &trans
  &trans       &kp Z  &gqt LG(X) X  &gqt LG(C) C  &gqt LG(V) V          &gqt LG(B) B  &trans  &trans          &gqt LG(N) N             &kp M  &gqt LEFT_BRACKET COMMA  &gqt RIGHT_BRACKET DOT  &gqt BACKSLASH SLASH  &trans
-                                       &kp LGUI    &kp LSHIFT  &gqt LS(ENTER) ENTER   &to 0  &trans  &gqt LG(SPACE) SPACE             &to 1                   &trans
+                                       &kp LGUI    &kp LSHIFT  &gqt LS(ENTER) ENTER   &to 0  &trans  &gqt LG(SPACE) SPACE     &kp BACKSPACE                   &trans
             >;
         };
 
@@ -384,10 +375,10 @@
                                  └─────────┴─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┴─────────┘ */
 
             bindings = <
-         &trans  &mwh SCROLL_LEFT  &mmv MOVE_UP  &mwh SCROLL_RIGHT  &mwh SCROLL_UP                  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mwh SCROLL_DOWN                  &trans  &trans &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &gqt LG(C) C  &gqt LG(V) V  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                         &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &mkp RCLK  &trans
+         &trans  &mwh SCROLL_LEFT    &mmv MOVE_UP  &mwh SCROLL_RIGHT    &mwh SCROLL_UP                     &trans     &trans  &trans  &trans  &trans
+ &trans  &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN    &mmv MOVE_RIGHT  &mwh SCROLL_DOWN                     &trans     &trans  &trans  &trans  &trans  &trans
+ &trans  &trans            &trans    &gqt LG(C) C       &gqt LG(V) V            &trans  &trans  &trans     &trans     &trans  &trans  &trans  &trans  &trans
+                                           &trans             &trans            &trans  &trans  &trans  &mkp LCLK  &mkp RCLK  &trans
             >;
         };
 
