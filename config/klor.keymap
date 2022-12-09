@@ -15,6 +15,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/mouse.h>
 
 #define BASE   0
 #define LOWER  1
@@ -22,6 +23,7 @@
 #define ADJUST 3
 
 / {
+
     combos {
         compatible = "zmk,combos";
 
@@ -321,6 +323,16 @@
                 <&kp>;
         };
     };
+    
+    &mmv {
+    time-to-max-speed-ms = <500>;
+    acceleration-exponent=<1>;
+};
+
+&mwh {
+    time-to-max-speed-ms = <500>;
+    acceleration-exponent=<1>;
+};
 
     keymap {
         compatible = "zmk,keymap";
@@ -362,19 +374,19 @@
             // └───────────────────────────────────────────────────────────┘
             /*          
              ┌─────────┬─────────┬─────────┬─────────┬─────────┐                    ┌─────────┬─────────┬─────────┬─────────┬─────────┐
-             │    1    │    2    │    3    │    4    │    5    │                    │    6    │    7    │    8    │    9    │    0    │
+             │         │SCROLL_< │    ^    │SCROLL_> │SCROLL_^ │                    │         │         │         │         │         │
    ┌─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤                    ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┐
-   │ MacOsSS |    <    │    ^    │    V    │    >    │    [    │                    │    ]    │    4    │    5    │    6    │    -    │     +   │
+   │         |         │    <    │    V    │    >    │SCROLL_V │                    │         │  LCLK   │   RCLK  │         │         │         │
    ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤╭────────╮╭────────╮├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤
-   │         │    <-   │   |^|   │   |V|   │    ->   │    {    ││        ││        ││    }    │    1    │    2    │    3    │    *    │         │
+   │         │         │         │   COPY  │  PASTE  │         ││        ││        ││         │         │         │         │         │         │
    └─────────┴─────────┴─────────┼─────────┼─────────┼─────────┼╰────────╯╰────────╯┼─────────┼─────────┼─────────┼─────────┴─────────┴─────────┘
-                                 │         │         │         │         ││         │         │  DELETE │    0    │
+                                 │         │         │         │         ││         │         │         │         │
                                  └─────────┴─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┴─────────┘ */
 
             bindings = <
-         &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+         &trans  &mwh SCROLL_LEFT  &mmv MOVE_UP  &mwh SCROLL_RIGHT  &mwh SCROLL_UP                  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mwh SCROLL_DOWN                  &trans  &mkp LCLK  &mkp RCLK  &trans  &trans  &trans
+ &trans  &trans  &trans  &gqt LG(C) C  &gqt LG(V) V  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
                          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
