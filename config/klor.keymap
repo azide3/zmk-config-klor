@@ -49,7 +49,7 @@
 
 &mwh {
     time-to-max-speed-ms = <250>;
-    acceleration-exponent = <0>;
+    acceleration-exponent = <1>;
 };
 
 / {
